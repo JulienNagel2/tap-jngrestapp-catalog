@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: jngrestapp-frontend
+  description: A REST App by JNG - Front End
+  tags:
+    - java
+    - spring
+    - web
+    - jng
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=jngrestapp-frontend'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
